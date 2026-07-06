@@ -24,25 +24,10 @@ https://templatemo.com/tm-539-simple-house
 		<!-- Logo & Site Name -->
 		{% include 'includes/header.html' %}
 
-        <main>
-			<header class="row tm-welcome-section">
-				<h2 class="col-12 text-center tm-section-title">Добро пожаловать в игру "Своя игра. Экслюзивно для Пост№1".</h2>
-				<p class="col-12 text-center">Разработано специально для МБУ ЦГПВ Пост№1.</p>
-			</header>
-			
-			<div class="tm-paging-links">
-				{% comment %} <nav> {% endcomment %}
-					<ul>
-						<li class="tm-paging-item"><a href="#" class="tm-paging-link active">Начать игру</a></li><br>
-						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Настройка команд</a></li>
-						{% comment %} <li class="tm-paging-item"><a href="#" class="tm-paging-link">Noodle</a></li> {% endcomment %}
-					</ul>
-				{% comment %} </nav> {% endcomment %}
-			</div>
-		</main>
+    {% block 'main' %}{% endblock %}
 
-        {% include 'includes/footer.html' %}
-    </div>
+    {% include 'includes/footer.html' %}
+  </div>
     {% include 'includes/scripts.html' %}
 </body>
 </html>

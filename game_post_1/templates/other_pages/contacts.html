@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block 'main' %}
+<main>
+  <header class="row tm-welcome-section">
+    <h2 class="col-12 text-center tm-section-title">Страница контактов</h2>
+    {% comment %} <p class="col-12 text-center">You may use <a rel="nofollow" href="https://www.ltcclock.com/downloads/simple-contact-form/" target="_blank">Simple Contact Form</a> to send email to your inbox. You can modify and use this template for your website. Header image has a parallax effect. Total 3 HTML pages included in this template.</p> {% endcomment %}
+  </header>
+
+  <div class="tm-container-inner-2 tm-contact-section">
+    <div class="row">
+      {% comment %} <div class="col-md-6">
+        <form action="" method="POST" class="tm-contact-form">
+          <div class="form-group">
+            <input type="text" name="name" class="form-control" placeholder="Name" required="" />
+          </div>
+          
+          <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="Email" required="" />
+          </div>
+
+          <div class="form-group">
+            <textarea rows="5" name="message" class="form-control" placeholder="Message" required=""></textarea>
+          </div>
+  
+          <div class="form-group tm-d-flex">
+            <button type="submit" class="tm-btn tm-btn-success tm-btn-right">
+            Send
+            </button>
+          </div>
+        </form>
+      </div> {% endcomment %}
+    <div class="col-md-6">
+      <div class="tm-address-box">
+        <h4 class="tm-info-title tm-text-success">Наш адрес</h4>
+        <address>
+          630054, Новосибирская область, город Новосибирск, ул. Костычева, д. 4 
+        </address>
+        <a href="Тел:(383)351-29-67" class="tm-contact-link">
+          <i class="fas fa-phone tm-contact-icon"></i>(383)351-29-67
+        </a>
+        <a href="mailto:post1.novosibirsk@yandex.ru" class="tm-contact-link">
+          <i class="fas fa-envelope tm-contact-icon"></i>post1.novosibirsk@yandex.ru
+        </a>
+        <div class="tm-contact-social">
+          <a href="https://fb.com/templatemo" class="tm-social-link"><i class="fab fa-facebook tm-social-icon"></i></a>
+          <a href="#" class="tm-social-link"><i class="fab fa-twitter tm-social-icon"></i></a>
+          <a href="#" class="tm-social-link"><i class="fab fa-instagram tm-social-icon"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- How to change your own map point
+  1. Go to Google Maps
+  2. Click on your location point
+  3. Click "Share" and choose "Embed map" tab
+  4. Copy only URL and paste it within the src="" field below
+  -->
+  <div class="tm-container-inner-2 tm-map-section">
+    <div class="row">
+      <div class="col-12">
+        <div class="tm-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1618.8390297593407!2d82.87420350966273!3d54.98389910717282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe6cfff272dfb%3A0xca1c6fe515492329!2z0J_QvtGB0YIg4oSWIDE!5e0!3m2!1sen!2sth!4v1783332954257!5m2!1sen!2sru" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock  %}

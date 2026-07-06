@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block 'main' %}
+<main>
+  <header class="row tm-welcome-section">
+    <h2 class="col-12 text-center tm-section-title">О проекте</h2>
+    <p class="col-12 text-center">Данный проект выполнен как добровольный и благодворительный
+      Пет-проект,
+      для развлекательных и/или интелектуальных развлечений,
+      специально для МБУ ЦГПВ Пост№1 города Новосибирска</p>
+  </header>
+
+  {% comment %} В будущем переделать на данные из БД {% endcomment %}
+  <div class="tm-container-inner tm-persons">
+    <div class="row">
+      <article class="col-lg-6">
+        <figure class="tm-person">
+          <img src="{% static 'img/photo/about-01_1.jpg' %}" alt="Image" class="img-fluid tm-person-img" />
+          <figcaption class="tm-person-description">
+            <h4 class="tm-person-name">Anton Pichugin</h4>
+            <p class="tm-person-title">Разработчик</p>
+            <p class="tm-person-about">Идея и разработка</p>
+            {% comment %} <div>
+              <a href="https://fb.com" class="tm-social-link"><i class="fab fa-facebook tm-social-icon"></i></a>
+              <a href="https://twitter.com" class="tm-social-link"><i class="fab fa-twitter tm-social-icon"></i></a>
+              <a href="https://instagram.com" class="tm-social-link"><i class="fab fa-instagram tm-social-icon"></i></a>
+            </div> {% endcomment %}
+          </figcaption>
+        </figure>
+      </article>
+    </div>
+  </div>
+</main>
+{% endblock  %}
