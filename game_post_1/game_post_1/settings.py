@@ -120,5 +120,9 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    Path(__file__).resolve().parent.parent / 'static',
+    # Path(__file__).resolve().parent.parent / 'static',
+    BASE_DIR / 'static',
 ]
+
+MEDIA_URL = "/game_post_1/static/img/media/"
+MEDIA_ROOT = BASE_DIR / "game_post_1/static/img/media"
