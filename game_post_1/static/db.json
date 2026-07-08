@@ -1,0 +1,19 @@
+[
+{
+  "model": "other_pages.employee",
+  "pk": 1,
+  "fields": {
+    "name": "Anton",
+    "middle_name": null,
+    "surname": "Pichugin",
+    "position_eng": "Developer",
+	"position_ru": "Python-разработчик",
+	"position_description": "Придуманная идея / разработка",
+    "link_vk": "https://vk.com/call_me_the_tony",
+	"link_tg": "https://t.me/+79231869433",
+	"link_mail": "antvlpi@gmail.com",
+	"photo": "avatars/about-01_1.jpg",
+	"active": true
+  }
+}
+]

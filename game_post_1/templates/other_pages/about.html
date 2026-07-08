@@ -16,17 +16,19 @@
     <div class="row">
       <article class="col-lg-6">
         <figure class="tm-person">
-          <img src="{% static 'img/media/about-01_1.jpg' %}" alt="Image" class="img-fluid tm-person-img" />
+          {% for employee in staff %}
+          <img src="{{ employee.photo.url }}" alt="Image" class="img-fluid tm-person-img" />
           <figcaption class="tm-person-description">
-            <h4 class="tm-person-name">Anton Pichugin</h4>
-            <p class="tm-person-title">Python-разработчик</p>
-            <p class="tm-person-about">Придуманная идея и разработка</p>
+            <h4 class="tm-person-name">{{ employee.name }} {{ employee.surname }}</h4>
+            <p class="tm-person-title">{{ employee.position_ru }}</p>
+            <p class="tm-person-about">{{ employee.position_description }}</p>
             <div>
-              <a href="https://vk.com/call_me_the_tony" class="tm-social-link"><i class="fab fa-vk tm-social-icon"></i></a>
-              <a href="https://t.me/+79231869433" class="tm-social-link"><i class="fab fa-telegram tm-social-icon"></i></a>
-              <a href="mailto:antvlpi@gmail.com" class="tm-social-link"><i class="fas fa-envelope tm-social-icon fa-envelope" aria-hidden="true"></i></a>
+              <a href="{{ employee.link_vk }}" class="tm-social-link"><i class="fab fa-vk tm-social-icon"></i></a>
+              <a href="{{ employee.link_tg }}" class="tm-social-link"><i class="fab fa-telegram tm-social-icon"></i></a>
+              <a href="mailto:{{ employee.link_mail }}" class="tm-social-link"><i class="fas fa-envelope tm-social-icon fa-envelope" aria-hidden="true"></i></a>
             </div>
           </figcaption>
+          {% endfor %}
         </figure>
       </article>
     </div>

@@ -124,5 +124,5 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
 
-MEDIA_URL = "/game_post_1/static/img/media/"
-MEDIA_ROOT = BASE_DIR / "game_post_1/static/img/media"
+MEDIA_ROOT = BASE_DIR / "static/img/media/"
+MEDIA_URL = "/img/media/"
