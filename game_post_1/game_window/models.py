@@ -38,6 +38,11 @@ class Question(TimeAndActive):
     question = models.CharField(max_length=512)
     is_open = models.BooleanField(default=False)
     there_photo = models.BooleanField(default=False)
+    photo_path = models.CharField(max_length=128, default='picture/')
+    picture = models.ImageField(upload_to='picture/', default=None)
     there_music = models.BooleanField(default=False)
-    photo_path = models.CharField(max_length=128)
-    music_path = models.CharField(max_length=128)
+    music_path = models.CharField(max_length=128, default='music/')
+    audio_file = models.FileField(upload_to='music/', default=None)
+    duration = models.DurationField(
+        help_text="Длительность (HH:MM:SS)", default=None
+    )
