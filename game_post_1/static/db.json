@@ -8,12 +8,46 @@
     "surname": "Pichugin",
     "position_eng": "Developer",
 	"position_ru": "Python-разработчик",
-	"position_description": "Придуманная идея / разработка",
+	"position_description": "Идея / разработка",
     "link_vk": "https://vk.com/call_me_the_tony",
 	"link_tg": "https://t.me/+79231869433",
 	"link_mail": "antvlpi@gmail.com",
 	"photo": "avatars/about-01_1.jpg",
 	"active": true
+  }
+},
+{
+  "model": "game_window.game",
+  "pk": 1,
+  "fields": {
+    "global_name": "Своя игра"
+  }
+},
+{
+  "model": "game_window.gametheme",
+  "pk": 1,
+  "fields": {
+	"game_id": 1,
+	"theme_name": "Тема 1",
+    "description": "Тестовое описание 1"
+  }
+},
+{
+  "model": "game_window.gametheme",
+  "pk": 2,
+  "fields": {
+	"game_id": 1,
+    "theme_name": "Тема 2",
+	"description": "Тестовое описание 2"
+  }
+},
+{
+  "model": "game_window.questiontheme",
+  "pk": 1,
+  "fields": {
+	"game_theme_id": 1,
+    "theme": "Тема вопросов 1",
+	"description": "Описание темы вопросов 1"
   }
 }
 ]

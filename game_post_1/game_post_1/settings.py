@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'welcome_page.apps.WelcomePageConfig',
     'other_pages.apps.OtherPagesConfig',
+    'game_window.apps.GameWindowConfig',
 ]
 
 MIDDLEWARE = [

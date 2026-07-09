@@ -10,7 +10,26 @@
     <div class="tm-paging-links">
       {% comment %} <nav> {% endcomment %}
         <ul>
-          <li class="tm-paging-item"><a href="#" class="tm-paging-link active">Начать игру</a></li><br>
+          <li class="tm-paging-item dropdown">
+            <a href="#" 
+              class="tm-paging-link dropdown-toggle" 
+              id="gameDropdown" 
+              data-bs-toggle="dropdown" 
+              aria-expanded="false">
+              Выбрать тему игры
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="gameDropdown">
+              {% for theme in themes %}
+                  <li>
+                      <a class="dropdown-item" href="{% url 'welcome_page:index' %}">
+                          {{ theme.theme_name }}
+                      </a>
+                  </li>
+              {% empty %}
+                  <li><span class="dropdown-item text-muted">В БД нет не одной добавленной темы игры</span></li>
+              {% endfor %}
+          </ul>
+          </li><br>
           <li class="tm-paging-item"><a href="#" class="tm-paging-link">Настройка команд</a></li>
           {% comment %} <li class="tm-paging-item"><a href="#" class="tm-paging-link">Noodle</a></li> {% endcomment %}
         </ul>
@@ -18,3 +37,29 @@
     </div>
   </main>
 {% endblock %}
+
+
+<!-- Добавляем класс dropdown к li -->
+<li class="tm-paging-item dropdown">
+    <!-- Добавляем атрибуты Bootstrap к ссылке <a> -->
+    <a href="#" 
+       class="tm-paging-link dropdown-toggle" 
+       id="gameDropdown" 
+       data-bs-toggle="dropdown" 
+       aria-expanded="false">
+        Начать игру
+    </a>
+    
+    <!-- Вставляем сам выпадающий список внутрь <li> -->
+    <ul class="dropdown-menu" aria-labelledby="gameDropdown">
+        {% for category in categories %}
+            <li>
+                <a class="dropdown-item" href="{% url 'start_game' category.id %}">
+                    {{ category.name }}
+                </a>
+            </li>
+        {% empty %}
+            <li><span class="dropdown-item text-muted">Нет категорий</span></li>
+        {% endfor %}
+    </ul>
+</li>
