@@ -20,7 +20,10 @@
   "model": "game_window.game",
   "pk": 1,
   "fields": {
-    "global_name": "Своя игра"
+    "global_name": "Своя игра",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
   }
 },
 {
@@ -29,7 +32,10 @@
   "fields": {
 	"game_id": 1,
 	"theme_name": "Тема 1",
-    "description": "Тестовое описание 1"
+    "description": "Тестовое описание 1",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
   }
 },
 {
@@ -38,7 +44,22 @@
   "fields": {
 	"game_id": 1,
     "theme_name": "Тема 2",
-	"description": "Тестовое описание 2"
+	"description": "Тестовое описание 2",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
+  }
+},
+{
+  "model": "game_window.gametheme",
+  "pk": 3,
+  "fields": {
+	"game_id": 1,
+    "theme_name": "Тема 3",
+	"description": "Тестовое описание 3",
+	"active": false,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
   }
 },
 {
@@ -46,8 +67,318 @@
   "pk": 1,
   "fields": {
 	"game_theme_id": 1,
-    "theme": "Тема вопросов 1",
-	"description": "Описание темы вопросов 1"
+    "theme": "Даты",
+	"description": "Даты связанные с военными конфликтами",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
+  }
+},
+{
+  "model": "game_window.questiontheme",
+  "pk": 2,
+  "fields": {
+	"game_theme_id": 1,
+    "theme": "Медицина",
+	"description": "Тема медицины",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
+  }
+},
+{
+  "model": "game_window.questiontheme",
+  "pk": 3,
+  "fields": {
+	"game_theme_id": 1,
+    "theme": "Личности",
+	"description": "Известные в истории военные личности",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
+  }
+},
+{
+  "model": "game_window.question",
+  "pk": 1,
+  "fields": {
+	"question_theme_id": 1,
+    "question": "Вопрос на 100",
+	"is_open": false,
+	"there_photo": false,
+	"photo_path": "picture/",
+	"picture": "picture/",
+	"there_music": false,
+	"music_path": "music/",
+	"audio_file": "music/",
+	"duration": "PT15M",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
+  }
+},
+{
+  "model": "game_window.question",
+  "pk": 2,
+  "fields": {
+	"question_theme_id": 1,
+    "question": "Вопрос на 200",
+	"is_open": false,
+	"there_photo": false,
+	"photo_path": "picture/",
+	"picture": "picture/",
+	"there_music": false,
+	"music_path": "music/",
+	"audio_file": "music/",
+	"duration": "PT15M",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
+  }
+},
+{
+  "model": "game_window.question",
+  "pk": 3,
+  "fields": {
+	"question_theme_id": 1,
+    "question": "Вопрос на 300",
+	"is_open": false,
+	"there_photo": false,
+	"photo_path": "picture/",
+	"picture": "picture/",
+	"there_music": false,
+	"music_path": "music/",
+	"audio_file": "music/",
+	"duration": "PT15M",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
+  }
+},
+{
+  "model": "game_window.question",
+  "pk": 4,
+  "fields": {
+	"question_theme_id": 1,
+    "question": "Вопрос на 400",
+	"is_open": false,
+	"there_photo": false,
+	"photo_path": "picture/",
+	"picture": "picture/",
+	"there_music": false,
+	"music_path": "music/",
+	"audio_file": "music/",
+	"duration": "PT15M",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
+  }
+},
+{
+  "model": "game_window.question",
+  "pk": 5,
+  "fields": {
+	"question_theme_id": 1,
+    "question": "Вопрос на 500",
+	"is_open": false,
+	"there_photo": false,
+	"photo_path": "picture/",
+	"picture": "picture/",
+	"there_music": false,
+	"music_path": "music/",
+	"audio_file": "music/",
+	"duration": "PT15M",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
+  }
+},{
+  "model": "game_window.question",
+  "pk": 6,
+  "fields": {
+	"question_theme_id": 2,
+    "question": "Вопрос на 100 v2",
+	"is_open": false,
+	"there_photo": false,
+	"photo_path": "picture/",
+	"picture": "picture/",
+	"there_music": false,
+	"music_path": "music/",
+	"audio_file": "music/",
+	"duration": "PT15M",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
+  }
+},
+{
+  "model": "game_window.question",
+  "pk": 7,
+  "fields": {
+	"question_theme_id": 2,
+    "question": "Вопрос на 200 v2",
+	"is_open": false,
+	"there_photo": false,
+	"photo_path": "picture/",
+	"picture": "picture/",
+	"there_music": false,
+	"music_path": "music/",
+	"audio_file": "music/",
+	"duration": "PT15M",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
+  }
+},
+{
+  "model": "game_window.question",
+  "pk": 8,
+  "fields": {
+	"question_theme_id": 2,
+    "question": "Вопрос на 300 v2",
+	"is_open": false,
+	"there_photo": false,
+	"photo_path": "picture/",
+	"picture": "picture/",
+	"there_music": false,
+	"music_path": "music/",
+	"audio_file": "music/",
+	"duration": "PT15M",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
+  }
+},
+{
+  "model": "game_window.question",
+  "pk": 9,
+  "fields": {
+	"question_theme_id": 2,
+    "question": "Вопрос на 400 v2",
+	"is_open": false,
+	"there_photo": false,
+	"photo_path": "picture/",
+	"picture": "picture/",
+	"there_music": false,
+	"music_path": "music/",
+	"audio_file": "music/",
+	"duration": "PT15M",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
+  }
+},
+{
+  "model": "game_window.question",
+  "pk": 10,
+  "fields": {
+	"question_theme_id": 2,
+    "question": "Вопрос на 500 v2",
+	"is_open": false,
+	"there_photo": false,
+	"photo_path": "picture/",
+	"picture": "picture/",
+	"there_music": false,
+	"music_path": "music/",
+	"audio_file": "music/",
+	"duration": "PT15M",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
+  }
+},{
+  "model": "game_window.question",
+  "pk": 11,
+  "fields": {
+	"question_theme_id": 3,
+    "question": "Вопрос на 100 v3",
+	"is_open": false,
+	"there_photo": false,
+	"photo_path": "picture/",
+	"picture": "picture/",
+	"there_music": false,
+	"music_path": "music/",
+	"audio_file": "music/",
+	"duration": "PT15M",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
+  }
+},
+{
+  "model": "game_window.question",
+  "pk": 12,
+  "fields": {
+	"question_theme_id": 3,
+    "question": "Вопрос на 200 v3",
+	"is_open": false,
+	"there_photo": false,
+	"photo_path": "picture/",
+	"picture": "picture/",
+	"there_music": false,
+	"music_path": "music/",
+	"audio_file": "music/",
+	"duration": "PT15M",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
+  }
+},
+{
+  "model": "game_window.question",
+  "pk": 13,
+  "fields": {
+	"question_theme_id": 3,
+    "question": "Вопрос на 300 v3",
+	"is_open": false,
+	"there_photo": false,
+	"photo_path": "picture/",
+	"picture": "picture/",
+	"there_music": false,
+	"music_path": "music/",
+	"audio_file": "music/",
+	"duration": "PT15M",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
+  }
+},
+{
+  "model": "game_window.question",
+  "pk": 14,
+  "fields": {
+	"question_theme_id": 3,
+    "question": "Вопрос на 400 v3",
+	"is_open": false,
+	"there_photo": false,
+	"photo_path": "picture/",
+	"picture": "picture/",
+	"there_music": false,
+	"music_path": "music/",
+	"audio_file": "music/",
+	"duration": "PT15M",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
+  }
+},
+{
+  "model": "game_window.question",
+  "pk": 15,
+  "fields": {
+	"question_theme_id": 3,
+    "question": "Вопрос на 500 v3",
+	"is_open": false,
+	"there_photo": false,
+	"photo_path": "picture/",
+	"picture": "picture/",
+	"there_music": false,
+	"music_path": "music/",
+	"audio_file": "music/",
+	"duration": "PT15M",
+	"active": true,
+	"created_at": "2026-10-07T00:00:01.995Z",
+	"updated_at": "2026-10-07T00:00:01.995Z"
   }
 }
 ]

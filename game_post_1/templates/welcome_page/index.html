@@ -21,7 +21,9 @@
             <ul class="dropdown-menu" aria-labelledby="gameDropdown">
               {% for theme in themes %}
                   <li>
-                      <a class="dropdown-item" href="{% url 'welcome_page:index' %}">
+                      {% comment %} <a class="dropdown-item" href="{% url 'game_window:game' %}"> {% endcomment %}
+                      <a class="dropdown-item" href="{% url 'game_window:game' theme.id%}">
+                          {% comment %} {{ theme.theme_name }} {% endcomment %}
                           {{ theme.theme_name }}
                       </a>
                   </li>

@@ -12,7 +12,6 @@ class TimeAndActive(models.Model):
 
 class Game(TimeAndActive):
     global_name = models.CharField(max_length=128)
-    active = models.BooleanField()
 
 
 class GameTheme(TimeAndActive):

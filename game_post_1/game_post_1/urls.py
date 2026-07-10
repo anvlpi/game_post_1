@@ -7,7 +7,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('welcome_page.urls', namespace='welcome_page')),
     path('pages/', include('other_pages.urls', namespace='other_pages')),
-    # path('game', include()),
+    path('game/', include('game_window.urls', namespace='game_window')),
 ]
 
 if settings.DEBUG:
